@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>BLACKJACK</h1>
+            <button id="play-game" onclick="startGame()">PLAY GAME</button>
+            <div id="game">
+                <div id="player">
+                    <h1>PLAYER</h1>
+                    <p id="cards-el">CARDS:</p>
+                    <p id="sum-el">SUM:</p>
+                    <button class="player-buttons" onclick="newCard()">
+                        HIT
+                    </button>
+                    <button class="player-buttons" onclick="stand()">
+                        STAND
+                    </button>
+                </div>
+
+                <div id="dealer">
+                    <h1>DEALER</h1>
+                    <p id="dealer-cards-el">CARDS:</p>
+                    <p id="dealer-sum-el">SUM:</p>
+                </div>
+            </div>
+            <h1 class="end-game"></h1>
+            <button class="end-game" onclick="restart()">Restart</button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
